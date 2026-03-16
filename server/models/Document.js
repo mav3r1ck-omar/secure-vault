@@ -30,5 +30,4 @@ const DocumentSchema=mongoose.Schema({
 },{
     timestamps:true
 });
-
 module.exports=mongoose.model('Document',DocumentSchema);
