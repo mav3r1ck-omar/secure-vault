@@ -10,7 +10,7 @@ module.exports=function(req,res,next){
         req.user=decoded.user;
         next();
     } catch (error) {
-        return res.status(500).json({msg:'server error :\\'});
         console.error('error: ',error.message);
+        return res.status(500).json({msg:'server error :\\'});
     }
 };
